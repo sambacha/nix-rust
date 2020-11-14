@@ -7,3 +7,7 @@ project.pkgs.mkShell {
     ${project.ci.pre-commit-check.shellHook}
   '';
 }
+
+let
+  rust = import ../nix/rust.nix;
+in rust.shell ./rust-toolchain
