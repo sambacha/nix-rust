@@ -1,0 +1,73 @@
+.
+├── ./Makefile
+├── ./README.md
+├── ./default.nix
+├── ./nix
+│   ├── ./nix/default.nix
+│   ├── ./nix/sources.json
+│   └── ./nix/sources.nix
+├── ./rust-toolchain
+├── ./shell.nix
+└── ./src
+    ├── ./src/engine
+    │   ├── ./src/engine/Cargo.toml
+    │   ├── ./src/engine/LICENSE
+    │   ├── ./src/engine/README.md
+    │   ├── ./src/engine/bpmn-interpreter-pallet
+    │   │   ├── ./src/engine/bpmn-interpreter-pallet/Cargo.toml
+    │   │   └── ./src/engine/bpmn-interpreter-pallet/src
+    │   │       ├── ./src/engine/bpmn-interpreter-pallet/src/errors.rs
+    │   │       └── ./src/engine/bpmn-interpreter-pallet/src/lib.rs
+    │   ├── ./src/engine/docker-compose.yml
+    │   ├── ./src/engine/ink-types-node-runtime
+    │   │   ├── ./src/engine/ink-types-node-runtime/Cargo.toml
+    │   │   ├── ./src/engine/ink-types-node-runtime/LICENSE
+    │   │   ├── ./src/engine/ink-types-node-runtime/README.md
+    │   │   ├── ./src/engine/ink-types-node-runtime/examples
+    │   │   │   └── ./src/engine/ink-types-node-runtime/examples/invoice_managing_data
+    │   │   │       ├── ./src/engine/ink-types-node-runtime/examples/invoice_managing_data/Cargo.toml
+    │   │   │       └── ./src/engine/ink-types-node-runtime/examples/invoice_managing_data/lib.rs
+    │   │   └── ./src/engine/ink-types-node-runtime/src
+    │   │       ├── ./src/engine/ink-types-node-runtime/src/calls.rs
+    │   │       └── ./src/engine/ink-types-node-runtime/src/lib.rs
+    │   ├── ./src/engine/node
+    │   │   ├── ./src/engine/node/Cargo.toml
+    │   │   ├── ./src/engine/node/build.rs
+    │   │   └── ./src/engine/node/src
+    │   │       ├── ./src/engine/node/src/chain_spec.rs
+    │   │       ├── ./src/engine/node/src/cli.rs
+    │   │       ├── ./src/engine/node/src/command.rs
+    │   │       ├── ./src/engine/node/src/main.rs
+    │   │       └── ./src/engine/node/src/service.rs
+    │   ├── ./src/engine/runtime
+    │   │   ├── ./src/engine/runtime/Cargo.toml
+    │   │   ├── ./src/engine/runtime/build.rs
+    │   │   └── ./src/engine/runtime/src
+    │   │       └── ./src/engine/runtime/src/lib.rs
+    │   └── ./src/engine/scripts
+    │       ├── ./src/engine/scripts/docker_run.sh
+    │       └── ./src/engine/scripts/init.sh
+    └── ./src/solidity
+        ├── ./src/solidity/data_scripts_example
+        │   └── ./src/solidity/data_scripts_example/invoice_managing_data
+        │       ├── ./src/solidity/data_scripts_example/invoice_managing_data/Cargo.toml
+        │       ├── ./src/solidity/data_scripts_example/invoice_managing_data/build_all.sh
+        │       ├── ./src/solidity/data_scripts_example/invoice_managing_data/idata
+        │       │   ├── ./src/solidity/data_scripts_example/invoice_managing_data/idata/Cargo.toml
+        │       │   └── ./src/solidity/data_scripts_example/invoice_managing_data/idata/lib.rs
+        │       └── ./src/solidity/data_scripts_example/invoice_managing_data/lib.rs
+        └── ./src/solidity/interpreter
+            ├── ./src/solidity/interpreter/bpmn_interpreter
+            │   ├── ./src/solidity/interpreter/bpmn_interpreter/Cargo.toml
+            │   └── ./src/solidity/interpreter/bpmn_interpreter/lib.rs
+            ├── ./src/solidity/interpreter/idata
+            │   ├── ./src/solidity/interpreter/idata/Cargo.toml
+            │   └── ./src/solidity/interpreter/idata/lib.rs
+            ├── ./src/solidity/interpreter/ifactory
+            │   ├── ./src/solidity/interpreter/ifactory/Cargo.toml
+            │   └── ./src/solidity/interpreter/ifactory/lib.rs
+            └── ./src/solidity/interpreter/iflow
+                ├── ./src/solidity/interpreter/iflow/Cargo.toml
+                └── ./src/solidity/interpreter/iflow/lib.rs
+
+23 directories, 47 files
